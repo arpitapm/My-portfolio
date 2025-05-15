@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gaming Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 20px;
+        }
+        nav a:hover {
+            background: #888;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .games {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .game-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .game-card h3 {
+            margin-top: 0;
+        }
+        .contact-form {
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            background: #333;
+            color: white;
+        }
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Gaming Portfolio</h1>
+        <p>Welcome to my world of gaming development and design!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#games">My Games</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate game developer who loves creating exciting and immersive experiences. I've been working in the gaming industry for several years, creating both indie and large-scale games. Here's a glimpse of my work:</p>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games">
+        <h2>My Games</h2>
+        <div class="games">
+            <div class="game-card">
+                <h3>Game Title 1</h3>
+                <p>Brief description of the game. Features, platform, and game style.</p>
+            </div>
+            <div class="game-card">
+                <h3>Game Title 2</h3>
+                <p>Brief description of the game. Features, platform, and game style.</p>
+            </div>
+            <div class="game-card">
+                <h3>Game Title 3</h3>
+                <p>Brief description of the game. Features, platform, and game style.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to collaborate, work with me, or just chat about gaming, feel free to get in touch!</p>
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Arpitha P M" required>
+            <input type="email" name="email" placeholder="arpithapm2005@gmail.com" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Gaming Portfolio</p>
+    </footer>
+
+</body>
+</html>
